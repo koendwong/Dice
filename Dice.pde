@@ -12,6 +12,7 @@ void setup() {
   textSize(70);
 }
 
+////////////////////////////////////
 
 void draw() {
   background(255);
@@ -33,6 +34,7 @@ void draw() {
     }
   }
   Spin += accelSpin*PI;
+  
   for (rotation = 6; rotation <= 18; rotation += 3) {
     for (ring = 1; ring <= rotation*2; ring++) {
       rotate(Spin);
@@ -51,6 +53,7 @@ void draw() {
   text(sum, 0, 25);
 } // draw
 
+////////////////////////////////////
 
 void mousePressed() {
   loop();
@@ -63,7 +66,6 @@ void endLoop() {
 
 class Die {
   int rectX, rectY, ellX, ellY, rNG;
-  float ringGap;
 
   Die(int x, int y) { // construct
     rectX = x-25;
