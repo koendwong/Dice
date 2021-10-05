@@ -54,7 +54,6 @@ void draw() {
   fill(0);
   textSize(70/scale);
   text(sum, 0, 25/scale);
-  System.out.println(ringGap);
 } // draw
 
 ////////////////////////////////////
