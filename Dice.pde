@@ -19,7 +19,7 @@ void draw() {
 
   scale = ((float)mouseY/800)+1;
   sum = 0;
-  float ringGap = ((float)mouseX/((float)300))+0.8;
+  float ringGap = ((float)mouseX/((float)290))+0.8;
   
   // accelerate
   accelSpin += 0.001;
