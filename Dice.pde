@@ -51,6 +51,10 @@ void draw() {
   if (b > nB)
     oB-=1;
   
+  rows = rotation-2;
+  if (rows < 1)
+    rows = 1;
+
   for (rotation = 2; rotation <= (mouseY/100)+2; rotation++) {
     for (ring = 1; ring <= rotation*6; ring++) {
       float rngRotate = (float)(Math.random()*2);
@@ -93,7 +97,6 @@ void draw() {
     if (b > 255)
       b = 255;
   }
-  rows = rotation-2;
   
   fill(255);
   textSize(70/scale);
